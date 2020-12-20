@@ -1,0 +1,436 @@
+body{
+	margin: 0;
+
+	font-family: 'Kadwa', serif;
+	font-size:14px;
+	color: #FFFFFFFF;
+    -webkid-font-smoothing:antialiased;
+
+	background-color: #17171e;
+}
+
+*,
+*,before,
+*:after{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 10px;
+}
+p {
+	margin: 0;
+}
+.container{
+   width: 100%;
+   max-width: 1300px;
+   margin: 0 auto;
+
+}
+
+
+/*=====  ГОлова  ======*/
+
+.header{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header__burger{
+	display: none;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+}
+.nav{
+	display: flex;
+	font-size:14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.nav__link{
+	margin-left: 50px;
+	color:#fff;
+	text-decoration: none;	
+}
+.nav__link:first-child {
+	margin-right: 0;
+	margin-left: 0;
+}
+.nav__link:hover {
+	color:#fe9000;
+	transition: color .1s;
+}
+
+/*=====  Інтро  ======*/
+
+.intro{
+	background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ), #232329 url(png/intro.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	padding-top: 5%;
+}
+.intro__title{
+	font-size: 58px;
+	color: #fe9000;
+	font-weight: 700;
+	line-height: 1.1;
+	text-align: left;
+	padding-top: 7%;
+}
+.intro__subtitle{
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+	font-size: 22px;
+	line-height: 1.1;
+}
+.intro__inner{}
+
+
+.btn{
+    padding: 12px 37px; 
+    border-radius: 7px;
+	width: 200px;
+	height: 70px;
+	text-decoration: none;
+	color: #000;
+	
+	font-size: 22px;
+	transition: background .1s linear;
+}
+.btn--orange{
+	background-color: #fe9000;
+}
+.btn--orange:hover {
+	background-color: #FE6B00;
+}
+/*=====  telo dali  ======*/
+
+.about__us{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 110px;
+
+}
+.about_title{
+	font-size: 48px;
+	line-height: 1.1;
+}
+
+.about__text{
+	line-height: 1.3;
+	font-size: 28px;
+}
+
+.block1{
+	margin-top: 120px;
+}
+
+.shaurma{
+	height: 2000px;
+	background-image:url(png/volna1.png);
+	width: 100%; 
+	background-size: cover;
+}
+.block2{
+	padding-top: 400px;
+	width: 50%;
+	margin-left: 30px;
+
+}
+/*=====  Галерея  ======*/
+.gallery{
+	text-align: center;
+	padding: 0 0 100px 0;
+}
+.food{
+	text-align: center;
+	margin-top: 7%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.otstup{
+	margin: 10px;
+
+}
+
+.food img:hover{
+	opacity: 0.9;
+}
+
+.line{
+	margin-top: 80px;
+}
+.otstup{
+	width: 31.3%;
+}
+
+/*=====  Виберіть свою їжу  ======*/
+.enjoy{
+	background-image:url(png/zad.png);
+	width: 100%; 
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+    align-items: center;      
+    overflow: auto;   
+}
+
+.block__enjoy{
+	background:#17171e;
+	border: 10px solid #fe9000;
+	height: 70%;
+	width: 60%; 
+	margin:0 auto;
+	text-align: center;
+}
+.block__enjoy h2{
+	margin: 1em 3em 3em 3em;
+}
+.block__enjoy h1{
+	padding-top: 40px;
+}
+/*=====  Наше меню ======*/
+.menu{
+	width: 100%;
+	margin: 0px auto;
+	min-height: 100%;
+	padding-top: 3%;
+	padding-bottom: 8%;
+}
+.menu h1{
+	text-align: center;
+	margin-bottom: 4%;
+}
+.our_menu{
+	display: flex;
+ 	width: 100%;
+}
+.vertical__menu{
+	flex: 0 1 33.333%;
+	padding: 0px 15px;
+}
+.vertical__menu img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.vertical__menu h2{
+	color: #fe9000;
+	font-size: 27px;
+	line-height: 32px;
+}
+.vlazz{
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 90% 0px;
+	overflow: hidden;
+	position: relative; 
+}
+p{
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+/*=====  Найкраща їжа======*/
+.best{
+	height: 457px;
+	  
+}
+.best__meal{
+	background-color: #17171e;
+	height: 460px; 
+    display: flex;
+    align-items: center; 
+    
+}
+.orang_block{
+	background-color: #fe9000;
+	height: 450px;    
+	display: flex;
+    align-items: center;
+    width: 100%;       
+}
+.orang_block__text{
+	width: 70%;
+	margin: 7em;
+}
+/*=====  Кінець сайта======*/
+.footer{
+	background-color:#323338FF;
+	min-height: 400px;
+}
+.footer__container{
+    display:inline-block;
+    text-align: center;
+    padding: 9% 0px 0px 24%;
+}
+
+.social-icons {
+ 	text-align: center;
+ 	padding-top: 3%;
+  }  
+.social-icons li {
+  	display:inline-block;
+ 	list-style-type:none;
+  	-webkit-user-select:none;
+  	-moz-user-select:none;
+  }
+.social-icons li a {
+ 	border-bottom: none;
+  }
+.social-icons li img {
+ 	width:50px;
+ 	height:50px;
+ 	margin-right: 20px;
+}
+.social-icons li img:hover {
+	background-color: #fe9000;
+	border-radius: 25px;
+}
+/*=====  Адаптація  ====padding: 2%;width:margin: 0px 0px 20px 0px;
+	padding: 0px 0px 58% 0px;
+	overflow: hidden;
+	position: relative; 400px;==*/
+
+@media (max-width: 1300px){
+	.container{
+		max-width: 1110px;
+	}
+}
+@media (max-width: 1109px){
+	.container{
+		max-width: 850px;
+
+	}
+	.footer__container{
+		padding: 9% 0px 0px 12%;
+	}
+	.block__enjoy{
+		height: calc(var(--row-count) * 128px);
+	    width: calc(var(--content-width) + 20px);
+	}
+	.orang_block img{
+		display: none;
+	}
+ 	.intro__title {
+ 		font-size: 38px;
+ 	}
+ 	.intro__subtitle{
+ 		font-size: 16px;
+ 	}
+ 	.btn{
+	 	width: 120px;
+	    height: 50px;
+	    font-size: 16px;
+ 	}
+ 	.about_title {
+ 		font-size: 28px;
+ 	}
+ 	.about__text {
+ 		font-size: 18px;
+ 	}
+ 	.shaurma {
+    	height: 1300px;
+	}
+	.best {
+    height: 300px;
+	}
+	.best__meal {
+		height: 300px;
+	}
+	.orang_block{
+	height: 300px;}
+	.orang_block__text{
+		text-align: center;
+		width: 80%;
+	}
+}
+
+@media (max-width: 850px){
+	.container{
+		max-width: 700px;	
+    }
+    .our_menu {
+    	flex-wrap: wrap;
+    }
+    .btn{margin-left: 56%;}
+    .footer{
+    	  min-height: 30vh;
+    }
+    .footer__container {
+    padding: 3% 0px 0px 5%;
+    }
+    
+    .nav{display: none;}
+    .header__inner img{
+    	display: block;
+    }
+/*=====  Бургер======
+	.header__burger{
+		display: block;
+		position: relative;
+		margin-top: 20px;
+		width: 30px;
+		height: 20px;
+}
+	.header__burger span{
+		position: absolute;
+		background-color: #fff;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+	}
+	.header__burger:before,
+	.header__burger:after{
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+	}
+	.header__burger:before{
+		top: 0;
+	}
+	.header__burger:after{
+		bottom: 0;
+	}
+	.header__inner{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #323338FF;
+		padding: 70px 0px 0px 0px;
+	}*/
+}
+
+
+
+
+
+
+
+
